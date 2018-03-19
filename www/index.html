@@ -51,7 +51,7 @@
                   <a href="/about/" data-view=".view-main" class="panel-close">Sobre</a>
                 </li>
                 <li>
-                  <a href="/form/" data-view=".view-main" class="panel-close">Cadastro de Usuários</a>
+                  <a href="#" class="popup-open" data-popup="#my-popup">Cadastro de Usuários</a>
                 </li>
                 <li>
                   <a href="#" data-login-screen="#my-login-screen" class="login-screen-open">Login</a>
@@ -148,7 +148,7 @@
             </ul> -->
           </div>
 
-          <div class="block-title">Modals</div>
+          <!-- <div class="block-title">Modals</div>
           <div class="block block-strong">
             <div class="row">
               <div class="col-50">
@@ -158,7 +158,7 @@
                 <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- <div class="block-title">Panels</div> -->
           <!-- <div class="block block-strong">
@@ -224,134 +224,126 @@
                     <div class="title">Cadastro de Usuários</div>
                   </div>
                 </div>
-                <div class="page-content">
-                  <div class="list no-hairlines-md">
-              
-                     <form>
-                      <!-- Text input-->
-                      <div class="form-group">
-                        <label class="col-md-4 control-label" for="textinput">Nome Completo</label>  
-                        <div class="col-md-4">
-                        <input id="nameInput" class="form-control input-md" type="text">
-                        
-                        </div>
-                      </div>
-              
-         <!-- Text input-->
-               <div class="form-group">
-                 <label class="col-md-4 control-label" for="ageInput">Data de nascimento</label>  
-                   <div class="col-md-4">
-                <input id="ageInput" class="form-control input-md" type="date">
-                </div>
-                </div> <br>
-              
-                <div class="form-group">
-                <label class="col-md-4 control-label" for="endInput">Endereço</label>  
-                <div class="col-md-4">
-                <input id="endInput" class="form-control input-md" type="text">
-                          
-                </div>
-                </div>
-                 <br>
-                 <div class="form-group">
-                 <label class="col-md-4 control-label" for="bairInput">Bairro</label>  
-                 <div class="col-md-4">
-                 <input id="bairInput" class="form-control input-md" type="text">
-                            
-                </div>
-                </div>
-                <br>
-              
-                <div class="form-group">
-                 <label class="col-md-4 control-label" for="ufInput">Estado</label>  
-                 <div class="col-md-4">
-                <input id="ufInput" class="form-control input-md" type="text">
-                              
-                </div>
-                 </div>
-                <br>
-              
-              <div class="form-group">
-              <label class="col-md-4 control-label" for="phoneInput">Telefone</label>  
-              <div class="col-md-4">
-                <input id="phoneInput" class="form-control input-md" type="tel" placeholder="(00) 0000-0000">
-                                
-              </div>
-            </div>
-            <br>
-            <div class="form-group">
-            <label class="col-md-4 control-label" for="emailInput">Email</label>  
-            <div class="col-md-4">
-           <input id="emailInput" class="form-control input-md" type="email">
-                                  
-           </div>
-           </div>
-           <br>
-          <div class="form-group">
-          <label class="col-md-4 control-label" for="passwordInput">Senha</label>  
+    <div class="page-content">
+      <div class="list no-hairlines-md">
+        <form>
+          <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Nome</label>  
           <div class="col-md-4">
-          <input id="passwordInput" class="form-control input-md" type="password">
-                                    
+            <input id="nameInput" class="form-control input-md" type="text">                  
           </div>
-          </div>
-          <br>
-          <button class=" col-md-4 col button button-small button-round button-outline color-black" id="addButton"> Cadastrar </button><br>
-           <button class="col button button-small button-round button-outline color-black" id="addButton"> Voltar</button>
-                      
-                      
-                      </form>   
         </div>
+                  
+          <!-- Text input-->
+          <div class="form-group">
+                <label class="col-md-4 control-label" for="dateInput">Data de Nascimento</label>  
+            <div class="col-md-4">
+                <input id="dateInput" class="form-control input-md" type="date">                  
+            </div>
+          </div> <br>
+                          
+          <div class="form-group">
+                <label class="col-md-4 control-label" for="addressInput">Endereço</label>  
+            <div class="col-md-4">
+                <input id="addressInput" class="form-control input-md" type="text">                               
+            </div>
+          </div> <br>
+
+          <div class="form-group">
+               <label class="col-md-4 control-label" for="bairInput">Bairro</label>  
+            <div class="col-md-4">
+               <input id="bairInput" class="form-control input-md" type="text">                                   
+            </div>
+          </div> <br>
+
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="ufInput">Estado</label>  
+            <div class="col-md-4">
+               <input id="ufInput" class="form-control input-md" type="text">                               
+            </div>
+          </div> <br>
+
+          <div class="form-group">
+               <label class="col-md-4 control-label" for="phoneInput">Telefone</label>  
+            <div class="col-md-4">
+               <input id="phoneInput" class="form-control input-md" type="tel" placeholder="(00) 0000-0000">                               
+            </div>
+          </div> <br>
+
+          <div class="form-group">
+               <label class="col-md-4 control-label" for="emailInput">Email</label>  
+            <div class="col-md-4">
+               <input id="emailInput" class="form-control input-md" type="email">                                
+            </div>
+          </div> <br>
+          
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="passwordInput">Senha</label>  
+            <div class="col-md-4">
+               <input id="passwordInput" class="form-control input-md" type="password">                              
+            </div>
+          </div> <br>
+          
+           <button class="col button button-small button-round button-outline color-black" id="addButton"> Cadastrar </button> <br>
+            
+           <!-- <button class="col button button-small button-round button-outline color-black">Voltar</button>     -->
+
+        </form>                     
       </div>
-    <!-- Login Screen -->
-    <div class="login-screen" id="my-login-screen">
-      <div class="view">
-          <div class="navbar color-theme-gray">
-              <div class="navbar-inner sliding">
-                <div class="left">
-                  <a href="#" class="link login-screen-close">
-                      
-                      <i class="f7-icons">chevron_left</i>
-                    <!-- <i class="icon icon-back"></i> -->
-                    <!-- <span class="ios-only">Back</span> -->
-                  </a>
-                </div>
+    </div>
+   <!-- Login Screen -->
+   <div class="login-screen" id="my-login-screen">
+    <div class="view">
+        <div class="navbar color-theme-gray">
+            <div class="navbar-inner sliding">
+              <div class="left">
+                <a href="#" class="link login-screen-close">
+                  <i class="f7-icons">chevron_left</i>
+                  <!-- <i class="icon icon-back"></i> -->
+                  <!-- <span class="ios-only">Back</span> -->
+                </a>
               </div>
+            </div>
+        </div>
+      <div class="page color-theme-grey">
+        <div class="page-content login-screen-content">
+          <div class="login-screen-title">Login</div>
+          <div class="list">
+            <ul>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Email</div>
+                  <div class="item-input-wrap">
+                    <input type="email" name="username" placeholder="Digite seu email">
+                  </div>
+                </div>
+              </li>
+              <li class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">Senha</div>
+                  <div class="item-input-wrap">
+                    <input type="password" name="password" placeholder="Digite sua senha">
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-        <div class="page">
-          <div class="page-content login-screen-content">
-            <div class="login-screen-title">Login</div>
-            <div class="list">
-                <ul>
-                    <li class="item-content item-input">
-                      <div class="item-inner">
-                        <div class="item-title item-label">Email</div>
-                        <div class="item-input-wrap">
-                          <input type="email" name="username" placeholder="Digite seu email">
-                        </div>
-                      </div>
-                    </li>
-                    <li class="item-content item-input">
-                      <div class="item-inner">
-                        <div class="item-title item-label">Senha</div>
-                        <div class="item-input-wrap">
-                          <input type="password" name="password" placeholder="Digite sua senha">
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-            </div>
-            <div class="list">
-              <ul>
-                <li>
-                  <a href="#" class="item-link list-button login-button">Sign In</a>
-                </li>
-              </ul>
-              <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
-            </div>
+          <div class="list">
+            <ul>
+              <li>
+                <a href="#" class="item-link list-button login-button SignUp">Entrar</a>
+              </li>
+              <li>
+                <a href="#" class="item-link list-button login-button SignOut">Sair</a>
+              </li>
+            </ul>
+            <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- Cordova -->
   <!--

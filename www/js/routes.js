@@ -3,23 +3,20 @@ routes = [
     path: '/',
     url: './index.html',
   },
-
   {
-    path: '/galeria/',
-    url: './pages/galeria.html',
+    path: '/about/',
+    url: './pages/about.html',
   },
   {
     path: '/pedidos/',
     url: './pages/pedidos.html',
   },
   {
-    path: '/about/',
-    url: './pages/about.html',
-  },
-  {
     path: '/form/',
     url: './pages/form.html',
   },
+
+
   // Left View Pages
   {
     path: '/left-page-1/',
