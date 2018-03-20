@@ -33,7 +33,7 @@
     <div class="panel panel-left panel-reveal">
       <div class="view view-left">
         <div class="page">
-          <div class="navbar color-theme-gray">
+          <div class="navbar color-theme-orange">
             <div class="navbar-inner sliding">
               <div class="title">Menu</div>
             </div>
@@ -51,14 +51,14 @@
                   <a href="/about/" data-view=".view-main" class="panel-close">Sobre</a>
                 </li>
                 <li>
-                  <a href="#" class="popup-open" data-popup="#my-popup">Cadastro de Usuários</a>
+                  <a href="#" class="popup-open" data-popup="#my-popup">Orçamento</a>
                 </li>
                 <li>
                   <a href="#" data-login-screen="#my-login-screen" class="login-screen-open">Login</a>
                 </li>
-                <li>
-                  <a href="/pedidos/" data-view=".view-main" class="panel-close">Acompanhe seu pedido</a>
-                </li>
+                <!-- <li>
+                  <a href="#" class="popup-open" data-popup="#popup-acompanhe">Acompanhe seu pedido</a>
+                </li> -->
               </ul>
             </div>
           </div>
@@ -86,7 +86,7 @@
       <!-- Page, data-name contains page name which can be used in callbacks -->
       <div class="page" data-name="home">
         <!-- Top Navbar -->
-        <div class="navbar color-theme-gray">
+        <div class="navbar color-theme-orange">
           <div class="navbar-inner">
             <div class="left">
               <a href="#" class="link icon-only panel-open" data-panel="left">
@@ -96,13 +96,13 @@
             </div>
             <div class="right">
               <a href="#" class="link icon-only panel-open" data-panel="right">
-                  <img class="lg" src="img/logo-ed.png" alt="logo alliance">
+                  <img class="lg" src="img/logo.png" alt="logo alliance">
               </a>
             </div>
           </div>
         </div>
         <!-- Toolbar-->
-        <div class="toolbar color-theme-gray">
+        <div class="toolbar color-theme-orange">
           <!-- <div class="toolbar-inner">
             <a href="#" class="link">Left Link</a>
             <a href="#" class="link">Right Link</a>
@@ -129,7 +129,7 @@
 
           <div class="block-title glr"><h2>Galeria</h2></div>
           <div class="list">
-            <img class="glra" src="img/cozinha-alliance.jpg" alt="cozinha alliance"> <br><br><br><br><br><br><br><br><br><br>
+           <a href="/galeria/"> <img class="glra" src="img/cozinha-alliance.jpg" alt="cozinha alliance"> </a> <br><br><br><br><br><br><br><br><br><br>
             <!-- <ul>
               <li>
                 <a href="/about/" class="item-content item-link">
@@ -174,7 +174,7 @@
           <div class="footer">
               <div class="footer_historia col-md-4">
                   <h2>Nossa História</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore exercitationem quas, debitis odit iure, libero voluptates quidem vero eaque eligendi consequatur nulla. Libero deleniti asperiores vel quasi magni, dolore magnam.</p>
+                  <p>Somos uma empresa de móveis planejados, visando a satisfação do cliente.  Estamos no mercado desde 2012, onde tudo começou como um hobby, e de tanto sucesso que obtivemos com os clientes, expandimos nossos serviços desde 2015, onde houve investimentos de máquinas.</p>
                 </div>
                 <div class="footer_contato col-md-4">
                   <h2>Contato</h2>
@@ -209,11 +209,42 @@
         </div>
       </div>
     </div>
+     
+    <!-- Popup 
+     <div class="popup-acompanhe" id="popup-acompanhe">
+      <div class="view">
+    <div class="page" data-name="about">
+      <div class="navbar color-theme-gray">
+        <div class="navbar-inner sliding">
+          <div class="left">
+            <a href="#" class="link popup-close">
+              <i class="icon icon-back"></i>
+              <span class="ios-only">Back</span>
+            </a>
+          </div>
+          <div class="title">Acompanhe seu pedido</div>
+        </div>
+      </div>
+      <div class="block-title">Determinate Progress Bar</div>
+<div class="block block-strong">
+  <p>Inline determinate progress bar:</p>
+  <div>
+    <p><span data-progress="10" class="progressbar" id="demo-inline-progressbar"></span></p>
+    <p class="segmented segmented-raised">
+      <a href="#" data-progress="10" class="button set-inline-progress">10%</a>
+      <a href="#" data-progress="30" class="button set-inline-progress">30%</a>
+      <a href="#" data-progress="50" class="button set-inline-progress">50%</a>
+      <a href="#" data-progress="100" class="button set-inline-progress">100%</a>
+    </p>
+  </div>
+</div>-->
+
+
     <!-- Popup -->
     <div class="popup" id="my-popup">
         <div class="view">
             <div class="page">
-                <div class="navbar color-theme-gray">
+                <div class="navbar color-theme-orange">
                   <div class="navbar-inner sliding">
                     <div class="left">
                       <a href="#" class="link popup-close">
@@ -234,8 +265,7 @@
             <input id="nameInput" class="form-control input-md" type="text">                  
           </div>
         </div>
-                  
-          <!-- Text input-->
+
           <div class="form-group">
                 <label class="col-md-4 control-label" for="dateInput">Data de Nascimento</label>  
             <div class="col-md-4">
@@ -295,7 +325,7 @@
    <!-- Login Screen -->
    <div class="login-screen" id="my-login-screen">
     <div class="view">
-        <div class="navbar color-theme-gray">
+        <div class="navbar color-theme-orange">
             <div class="navbar-inner sliding">
               <div class="left">
                 <a href="#" class="link login-screen-close">

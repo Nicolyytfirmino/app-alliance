@@ -12,6 +12,10 @@ routes = [
     url: './pages/pedidos.html',
   },
   {
+    path: '/galeria/',
+    url: './pages/galeria.html',
+  },
+  {
     path: '/form/',
     url: './pages/form.html',
   },

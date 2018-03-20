@@ -131,3 +131,13 @@ function inserir(name, date, addressInput, bairInput, ufInput, phoneInput, email
 	return firebase.database().ref().child('usuarios').push(data)
 } 
 
+//Acompanhe seu pedido
+var app = new Framework7();
+
+var $$ = Dom7;
+
+// Set progress on inline progressbar
+$$('.set-inline-progress').on('click', function (e) {
+  var progress = $$(this).attr('data-progress');
+  app.progressbar.set('#demo-inline-progressbar', progress);
+});
