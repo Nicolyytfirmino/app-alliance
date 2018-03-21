@@ -20,17 +20,17 @@
 
 .cozinha img{height: 50%;}
 
-.sobre h2{color: #623714; text-align: center;}
+.sobre h2{color: #a58c76; text-align: center;}
 
 .sobre p{color: black; text-align: center;}
 
-.glr h2{color: #623714; text-align: center;}
+.glr h2{color: #a58c76; text-align: center;}
 
 .glra{position: absolute; left: 3%;}
 
-.footer{background: black; padding: 10px 0; }
+.footer{background: #a58c76; padding: 10px 0; }
 
-.footer h2{color: #FF9800;}
+.footer h2{color: #000;}
 
 .footer_contato{color: #fff;}
 
@@ -38,7 +38,7 @@
 
 .footer p{color: #fff;}
 
-.footer h3{color: #623714;}
+.footer h3{color: #a58c76;}
 
 .footer_contato ul li{
 	display:inline-block;
