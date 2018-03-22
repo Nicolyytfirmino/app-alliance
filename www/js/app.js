@@ -111,23 +111,26 @@ $$('.logoff').on('click', function () {
 // CADASTRAR
 
 var nameInput = document.getElementById('nameInput');
-var dateInput = document.getElementById('dateInput');
+var emailInput = document.getElementById('emailInput');
 var addressInput = document.getElementById('addressInput');
 var bairInput = document.getElementById('bairInput');
+var cidInput = document.getElementById('cidInput');
 var ufInput = document.getElementById('ufInput');
 var phoneInput = document.getElementById('phoneInput');
-var emailInput = document.getElementById('emailInput');
-var passwordInput = document.getElementById('passwordInput');
+var selectbasic = document.getElementById('selectbasic');
+var comInput = document.getElementById('comInput');
+var metragemInput = document.getElementById('metragemInput');
+
 
 var addButton = document.getElementById('addButton')
 
 addButton.addEventListener('click', function(e){ 	/*addEventListener= escutando um evento*/
 	e.preventDefault();
-    inserir(nameInput.value, dateInput.value, addressInput.value, bairInput.value, ufInput.value, phoneInput.value, emailInput.value, passwordInput.value);
+    inserir(nameInput.value, emailInput.value, addressInput.value, bairInput.value, cidInput.value, ufInput.value, phoneInput.value, selectbasic.value, comInput.value, metragemInput.value);
 })
 
-function inserir(name, date, addressInput, bairInput, ufInput, phoneInput, emailInput, passwordInput){
-	var data = { nome: name, idade: date, endereco: addressInput, bairro: bairInput, estado: ufInput, telefone: phoneInput, email: emailInput, senha: passwordInput }
+function inserir(name, emailInput, addressInput, bairInput, cidInput, ufInput, phoneInput, selectbasic, comInput, metragemInput){
+	var data = { nome: name, email: emailInput, endereco: addressInput, bairro: bairInput, cidade:cidInput, estado: ufInput, telefone: phoneInput, finalidade: selectbasic, comodo: comInput, metragem: metragemInput }
 	return firebase.database().ref().child('usuarios').push(data)
 } 
 
@@ -141,3 +144,4 @@ $$('.set-inline-progress').on('click', function (e) {
   var progress = $$(this).attr('data-progress');
   app.progressbar.set('#demo-inline-progressbar', progress);
 });
+

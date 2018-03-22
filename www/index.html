@@ -35,7 +35,7 @@
         <div class="page">
           <div class="navbar color-theme-white">
             <div class="navbar-inner sliding">
-              <div class="title">Menu</div>
+              <div class="title"> <p class="text-color-black">Menu</p></div>
             </div>
           </div>
           <div class="page-content">
@@ -90,7 +90,8 @@
           <div class="navbar-inner">
             <div class="left">
               <a href="#" class="link icon-only panel-open" data-panel="left">
-                <i class="f7-icons">settings_fill</i>
+                <!-- <i class="f7-icons">settings_fill</i> -->
+                <img src="img/menu.png" alt="menu">
                 <!-- <i class="icon material-icons md-only">bars</i> -->
               </a>
             </div>
@@ -159,7 +160,7 @@
           <div class="footer">
               <div class="footer_historia col-md-4">
                   <h2>Nossa História</h2>
-                  <p>Somos uma empresa de móveis planejados, visando a satisfação do cliente.  Estamos no mercado desde 2012, onde tudo começou como um hobby, e de tanto sucesso que obtivemos com os clientes, expandimos nossos serviços desde 2015, onde houve investimentos de máquinas.</p>
+                  <p>Somos uma empresa de móveis planejados, visando a satisfação do cliente.  Estamos no mercado desde 2012, onde tudo começou <br> como um hobby, e de tanto sucesso <br> que obtivemos com os clientes, expandimos nossos serviços desde 2015, onde houve investimentos de máquinas.</p>
                 </div>
                 <div class="footer_contato col-md-4">
                   <h2>Contato</h2>
@@ -177,18 +178,18 @@
                      </li>
                      <br> <br>
                      <li>
-                       <img src="img/whatsapp.png" alt="logo whatsapp"> 19 3203-3139
+                       <img src="img/whatsapp.png" alt="logo whatsapp">  19 98290-0918 
                         <!-- <i class="f7-icons"> phone_round_fill</i> 19 3203-3139 -->
                      </li>
                      <br><br>
                     <li>
-                        <i class="material-icons">smartphone</i> 19 99624-6589
+                        <i class="material-icons">phone_iphone</i> 19 99624-6589
                     </li> <br><br>
                     <li>
-                        <i class="material-icons">smartphone</i> 19 98290-0918
+                        <i class="f7-icons">phone</i> 19 3203-3139
                     </li> <br><br>
                     <li>
-                        <i class="material-icons">local_post_office</i> alliance.mpc@gmail.com
+                      <img src="img/email.png" alt="email"> alliance.mpc@gmail.com
                     </li>   
                   </ul>
                 </div>
@@ -231,19 +232,22 @@
     <div class="popup" id="my-popup">
         <div class="view">
             <div class="page">
-                <div class="navbar color-theme-orange">
+                <div class="navbar color-theme-white">
                   <div class="navbar-inner sliding">
                     <div class="left">
                       <a href="#" class="link popup-close">
-                        <i class="icon icon-back"></i>
+                        <!-- <i class="icon icon-back"></i> -->
+                        <img src="img/v.png" alt="voltar">
                         <span class="ios-only">Back</span>
                       </a>
                     </div>
-                    <div class="title">Cadastro de Usuários</div>
+                    <div class="title"> <p class="text-color-black">Orçamento</p></div>
+                    <!-- <div class="title">Cadastro de Usuários</div> -->
                   </div>
                 </div>
     <div class="page-content">
-      <div class="list no-hairlines-md">
+      <div class="list no-hairlines-md"> <br>
+
         <form>
           <!-- Text input-->
         <div class="form-group">
@@ -253,54 +257,116 @@
           </div>
         </div>
 
-          <div class="form-group">
-                <label class="col-md-4 control-label" for="dateInput">Data de Nascimento</label>  
-            <div class="col-md-4">
-                <input id="dateInput" class="form-control input-md" type="date">                  
-            </div>
-          </div> <br>
-                          
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="emailInput">Email</label>  
+       <div class="col-md-4">
+          <input id="emailInput" class="form-control input-md" type="email">                                
+       </div>
+     </div>
+                         
           <div class="form-group">
                 <label class="col-md-4 control-label" for="addressInput">Endereço</label>  
             <div class="col-md-4">
                 <input id="addressInput" class="form-control input-md" type="text">                               
             </div>
-          </div> <br>
+          </div> 
 
           <div class="form-group">
                <label class="col-md-4 control-label" for="bairInput">Bairro</label>  
             <div class="col-md-4">
                <input id="bairInput" class="form-control input-md" type="text">                                   
             </div>
-          </div> <br>
+          </div>
+
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cidInput">Cidade</label>  
+         <div class="col-md-4">
+            <input id="cidInput" class="form-control input-md" type="text">                                   
+         </div>
+       </div>
 
           <div class="form-group">
               <label class="col-md-4 control-label" for="ufInput">Estado</label>  
             <div class="col-md-4">
                <input id="ufInput" class="form-control input-md" type="text">                               
             </div>
-          </div> <br>
+          </div>
 
           <div class="form-group">
                <label class="col-md-4 control-label" for="phoneInput">Telefone</label>  
             <div class="col-md-4">
                <input id="phoneInput" class="form-control input-md" type="tel" placeholder="(00) 0000-0000">                               
             </div>
-          </div> <br>
+          </div> 
 
+          <!-- Select Basic -->
           <div class="form-group">
-               <label class="col-md-4 control-label" for="emailInput">Email</label>  
+            <label class="col-md-4 control-label" for="selectbasic">Finalidade</label>
             <div class="col-md-4">
-               <input id="emailInput" class="form-control input-md" type="email">                                
+              <select id="selectbasic" name="selectbasic" class="form-control">
+                <option value="decoracao">Decoração</option>
+                <option value="reforma">Reforma</option>
+                <option value="construcao">Construção</option>
+              </select>
+            </div> <br>
+
+            
+            <!-- <label class="col-md-4 control-label" for="phoneInput">Finalidade</label> 
+    <div class="list">
+      <ul>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="checkbox" value="Books" checked="checked"/>
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Decoração</div>
             </div>
-          </div> <br>
+          </label>
+        </li>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="checkbox" value="Movies"/>
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Reforma</div>
+            </div>
+          </label>
+        </li>
+        <li>
+          <label class="item-checkbox item-content">
+            <input type="checkbox" name="checkbox" value="Food"/>
+            <i class="icon icon-checkbox"></i>
+            <div class="item-inner">
+              <div class="item-title">Construção</div>
+            </div>
+          </label>
+        </li>
+      </ul>
+    </div> -->
+            
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Cômodo</label>  
+              <div class="col-md-4">
+                <input id="comInput" class="form-control input-md" type="text">                  
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Metragem</label>  
+              <div class="col-md-4">
+                <input id="metragemInput" class="form-control input-md" type="text">                  
+              </div>
+            </div>
+            
+
+          </div>
           
-          <div class="form-group">
+          <!-- <div class="form-group">
               <label class="col-md-4 control-label" for="passwordInput">Senha</label>  
             <div class="col-md-4">
                <input id="passwordInput" class="form-control input-md" type="password">                              
             </div>
-          </div> <br>
+          </div> <br> -->
           
            <button class="col button button-small button-round button-outline color-black" id="addButton"> Cadastrar </button> <br>
             
@@ -312,11 +378,12 @@
    <!-- Login Screen -->
    <div class="login-screen" id="my-login-screen">
     <div class="view">
-        <div class="navbar color-theme-orange">
+        <div class="navbar color-theme-white">
             <div class="navbar-inner sliding">
               <div class="left">
                 <a href="#" class="link login-screen-close">
-                  <i class="f7-icons">chevron_left</i>
+                  <!-- <i class="f7-icons">chevron_left</i> -->
+                  <img src="img/v.png" alt="voltar">
                   <!-- <i class="icon icon-back"></i> -->
                   <!-- <span class="ios-only">Back</span> -->
                 </a>

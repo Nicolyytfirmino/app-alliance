@@ -32,11 +32,11 @@
 
 .footer h2{color: #000;}
 
-.footer_contato{color: #fff;}
+/* .footer_contato{color: #fff;} */
 
 .footer_contato h2{ margin: 15px; }
 
-.footer p{color: #fff;}
+/* .footer p{color: #fff;} */
 
 .footer h3{color: #a58c76;}
 
@@ -55,6 +55,14 @@
 .footer_historia h2{ margin: 15px;}
 
 .color-custom { color: #fff; }
+
+h1{text-align: center;}
+
+.valores{ 
+    text-align: center;
+}
+
+h2, p{text-align: center;}
 
 
 
