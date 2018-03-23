@@ -127,6 +127,11 @@
 
             <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p> -->
           </div>
+          <!-- <div>
+              <h2 class="h4">Acesse sua página</h2>
+              <a href="#" class="col button color-black button-outline button-round button-small button-raised 
+              panel-close login-screen-open btn" data-login-screen="#my-login-screen">Login</a> <br>
+            </div> -->
 
           <div class="block-title glr"><h2>Galeria</h2></div>
           <div class="list">
@@ -308,8 +313,9 @@
                 <option value="reforma">Reforma</option>
                 <option value="construcao">Construção</option>
               </select>
-            </div> <br>
-
+            </div>
+            </div>
+            
             
             <!-- <label class="col-md-4 control-label" for="phoneInput">Finalidade</label> 
     <div class="list">
@@ -342,8 +348,8 @@
           </label>
         </li>
       </ul>
-    </div> -->
-            
+    </div> -->              
+
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Cômodo</label>  
               <div class="col-md-4">
@@ -357,24 +363,23 @@
                 <input id="metragemInput" class="form-control input-md" type="text">                  
               </div>
             </div>
-            
-
-          </div>
           
-          <!-- <div class="form-group">
-              <label class="col-md-4 control-label" for="passwordInput">Senha</label>  
+          <div class="form-group">
+              <label class="col-md-4 control-label" for="date">Dia</label>  
             <div class="col-md-4">
-               <input id="passwordInput" class="form-control input-md" type="password">                              
+              <input id="nascInput" class="form-control input-md" type="date">                  
             </div>
-          </div> <br> -->
-          
-           <button class="col button button-small button-round button-outline color-black" id="addButton"> Cadastrar </button> <br>
-            
-           <!-- <button class="col button button-small button-round button-outline color-black">Voltar</button>     -->
+          </div>  
+        
+        </div>
 
+        <button class="col button button-small button-round button-outline color-black" id="addButton"> Cadastrar </button> <br>
+          </div>
+            
         </form>                     
       </div>
     </div>
+    
    <!-- Login Screen -->
    <div class="login-screen" id="my-login-screen">
     <div class="view">
@@ -382,10 +387,7 @@
             <div class="navbar-inner sliding">
               <div class="left">
                 <a href="#" class="link login-screen-close">
-                  <!-- <i class="f7-icons">chevron_left</i> -->
                   <img src="img/v.png" alt="voltar">
-                  <!-- <i class="icon icon-back"></i> -->
-                  <!-- <span class="ios-only">Back</span> -->
                 </a>
               </div>
             </div>
@@ -414,16 +416,19 @@
             </ul>
           </div>
           <div class="list">
-            <ul>
-              <li>
-                <a href="#" class="item-link list-button login-button SignUp">Entrar</a>
-              </li>
-              <li>
-                <a href="#" class="item-link list-button login-button SignOut">Sair</a>
-              </li>
-            </ul>
-            <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
-          </div>
+              <ul>
+                <li>
+                  <a href="#" class="item-link list-button login-button SignIn">Entrar</a>
+                </li>
+                <li>
+                  <a href="#" class="item-link list-button login-button SignUp">cadastre-se</a>
+                </li>
+                <li>
+                  <a href="#" class="item-link list-button login-button SignOut">Sair</a>
+                </li>
+              </ul>
+              <div class="block-footer">Some text about login information.<br>Click "Sign In" to close Login Screen</div>
+            </div>
         </div>
       </div>
     </div>
