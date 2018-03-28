@@ -47,9 +47,9 @@
             </div> -->
             <div class="list links-list">
               <ul>
-                <li>
+                <!-- <li>
                   <a href="/about/" data-view=".view-main" class="panel-close">Sobre</a>
-                </li>
+                </li> -->
                 <li>
                   <a href="#" class="popup-open" data-popup="#my-popup">Orçamento</a>
                 </li>
@@ -59,30 +59,18 @@
                 <li>
                   <a href="/galeria/" data-view=".view-main" class="panel-close">Galeria</a>
                 </li>
-                <!-- <li>
-                  <a href="#" class="popup-open" data-popup="#popup-acompanhe">Acompanhe seu pedido</a>
-                </li> -->
+                <li>
+                  <a href="/pedidos/" data-view=".view-main" class="panel-close">Meus pedidos</a>
+                </li>
+                <li>
+                    <a href="/contato/" data-view=".view-main" class="panel-close">Contato</a>
+                  </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Right panel with cover effect -->
-    <!-- <div class="panel panel-right panel-cover theme-dark">
-      <div class="view">
-        <div class="page">
-          <div class="navbar color-theme-red">
-            <div class="navbar-inner">
-              <div class="title">Right Panel</div>
-            </div>
-          </div>
-          <div class="page-content">
-            <div class="block">Right panel content goes here</div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main ios-edges">
@@ -125,10 +113,8 @@
           <div class="sobre">
              <h2>A Alliance</h2>
             <p>Somos uma empresa de móveis planejados, visando a satisfação do cliente. Estamos no mercado desde 2012, onde tudo começou como um hobby.</p>
-
-            <!-- <p>Each view may have different layout, different navbar type (dynamic, fixed or static) or without navbar.</p>
-
-            <p>The fun thing is that you can easily control one view from another without any line of JavaScript just using "data-view" attribute on links.</p> -->
+              <br>
+              <a href="/about/" id="btnSalvar" class="col button button-small button-round button-outline color-black" >Sobre</a>
           </div>
           <!-- <div>
               <h2 class="h4">Acesse sua página</h2>
@@ -142,29 +128,6 @@
           
           </div>
 
-          <!-- <div class="block-title">Modals</div>
-          <div class="block block-strong">
-            <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill popup-open" data-popup="#my-popup">Popup</a>
-              </div> 
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="block-title">Panels</div> -->
-          <!-- <div class="block block-strong">
-            <div class="row">
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill panel-open" data-panel="left">Left Panel</a>
-              </div>
-              <div class="col-50">
-                <a href="#" class="button button-raised button-fill panel-open" data-panel="right">Right Panel</a>
-              </div>
-            </div>
-          </div> -->
           <div class="footer">
               <div class="footer_historia col-md-4">
                   <h2>Nossa História</h2>
@@ -260,49 +223,49 @@
           <!-- Text input-->
         <div class="form-group">
             <label class="col-md-4 control-label" for="textinput">Nome</label>  
-          <div class="col-md-4">
-            <input id="nameInput" class="form-control input-md" type="text">                  
+          <div class="col-md-4 item-input-wrap">
+            <input id="nameInput" class="form-control input-md" type="text" placeholder="Digite seu nome completo">                  
           </div>
         </div>
 
         <div class="form-group">
           <label class="col-md-4 control-label" for="emailInput">Email</label>  
-       <div class="col-md-4">
-          <input id="emailInput" class="form-control input-md" type="email">                                
+       <div class="col-md-4 item-input-wrap">
+          <input id="emailInput" class="form-control input-md" type="email" placeholder="Digite seu email">                                
        </div>
      </div>
                          
           <div class="form-group">
                 <label class="col-md-4 control-label" for="addressInput">Endereço</label>  
-            <div class="col-md-4">
-                <input id="addressInput" class="form-control input-md" type="text">                               
+            <div class="col-md-4 item-input-wrap">
+                <input id="addressInput" class="form-control input-md" type="text" placeholder="Endereço">                               
             </div>
           </div> 
 
           <div class="form-group">
                <label class="col-md-4 control-label" for="bairInput">Bairro</label>  
-            <div class="col-md-4">
-               <input id="bairInput" class="form-control input-md" type="text">                                   
+            <div class="col-md-4 item-input-wrap">
+               <input id="bairInput" class="form-control input-md" type="text" placeholder="Bairro">                                   
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-md-4 control-label" for="cidInput">Cidade</label>  
-         <div class="col-md-4">
-            <input id="cidInput" class="form-control input-md" type="text">                                   
+         <div class="col-md-4 item-input-wrap">
+            <input id="cidInput" class="form-control input-md" type="text" placeholder="Cidade">                                   
          </div>
        </div>
 
           <div class="form-group">
               <label class="col-md-4 control-label" for="ufInput">Estado</label>  
-            <div class="col-md-4">
-               <input id="ufInput" class="form-control input-md" type="text">                               
+            <div class="col-md-4 item-input-wrap">
+               <input id="ufInput" class="form-control input-md" type="text" placeholder="">                               
             </div>
           </div>
 
           <div class="form-group">
                <label class="col-md-4 control-label" for="phoneInput">Telefone</label>  
-            <div class="col-md-4">
+            <div class="col-md-4 item-input-wrap">
                <input id="phoneInput" class="form-control input-md" type="tel" placeholder="(00) 0000-0000">                               
             </div>
           </div> 
@@ -310,8 +273,9 @@
           <!-- Select Basic -->
           <div class="form-group">
             <label class="col-md-4 control-label" for="selectbasic">Finalidade</label>
-            <div class="col-md-4">
+            <div class="col-md-4 item-input-wrap">
               <select id="selectbasic" name="selectbasic" class="form-control">
+                  <option value=""></option>
                 <option value="decoracao">Decoração</option>
                 <option value="reforma">Reforma</option>
                 <option value="construcao">Construção</option>
@@ -321,21 +285,22 @@
 
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Cômodo</label>  
-              <div class="col-md-4">
-                <input id="comInput" class="form-control input-md" type="text">                  
+              <div class="col-md-4 item-input-wrap">
+                <input id="comInput" class="form-control input-md" type="text" placeholder="Digite seu cômodo">                  
               </div>
             </div>
 
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textinput">Metragem</label>  
-              <div class="col-md-4">
-                <input id="metragemInput" class="form-control input-md" type="text">                  
+              <div class="col-md-4 item-input-wrap">
+                <input id="metragemInput" class="form-control input-md" type="text" placeholder="Digite a metragem de sua casa/apartamento">                  
               </div>
             </div>
           
           <div class="form-group">
-              <label class="col-md-4 control-label" for="date">Dia</label>  
-            <div class="col-md-4">
+              <label class="col-md-4 control-label" for="date">Agênde o dia para visita</label>  
+            <div class="col-md-4 item-input-wrap">
+                
               <input id="nascInput" class="form-control input-md" type="date">                  
             </div>
           </div>  
@@ -346,8 +311,7 @@
           </div>
             
         </form>                     
-      </div>
-    </div>
+ 
     
    <!-- Login Screen -->
    <div class="login-screen" id="my-login-screen">
@@ -402,7 +366,8 @@
       </div>
     </div>
   </div>
-  </div>
+  
+ 
   <!-- Cordova -->
   <!--
   <script src="cordova.js"></script>
@@ -418,6 +383,8 @@
   <script src="js/firebase.js"></script>
   <script src="js/firebaseapp.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/form-user.js"></script>
+  <script src="js/pedidos.js"></script>
 
 </body>
 </html>

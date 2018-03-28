@@ -20,6 +20,13 @@
 
 .cozinha img{height: 50%;}
 
+
+.galeria{position: absolute; left: 30%;}
+
+.galeriaa{position: absolute; left: 22%;}
+
+.galeriaaa{position: absolute; left: 19%;}
+
 .sobre h2{color: #a58c76; text-align: center;}
 
 .sobre p{color: black; text-align: center;}
@@ -66,5 +73,7 @@ h2, p{text-align: center;}
 
 .h4{ text-align: center; color: #a58c76;}
 
-
-
+.titulo{
+    color: #a58c76;
+    text-align: center;
+}

@@ -8,6 +8,10 @@ routes = [
     url: './pages/about.html',
   },
   {
+    path: '/contato/',
+    url: './pages/contato.html',
+  },
+  {
     path: '/pedidos/',
     url: './pages/pedidos.html',
   },

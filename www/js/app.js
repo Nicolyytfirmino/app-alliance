@@ -165,23 +165,27 @@ var addButton = document.getElementById('addButton')
 addButton.addEventListener('click', function(e){ 	/*addEventListener= escutando um evento*/
 	e.preventDefault();
     inserir(nameInput.value, emailInput.value, addressInput.value, bairInput.value, cidInput.value, ufInput.value, phoneInput.value, selectbasic.value, comInput.value, metragemInput.value, nascInput.value);
-})
+
+    firebase
+    .auth()
+    .signOut()
+    .then( function () {
+      this.$$('.toolbar-inner').text('Enviado com sucesso');
+      app.dialog.alert('Enviado com sucesso');
+      app.popup.close('#my-popup');
+      
+    }, function(error){
+      console.error(error)
+    })
+  })
 
 function inserir(name, emailInput, addressInput, bairInput, cidInput, ufInput, phoneInput, selectbasic, comInput, metragemInput, nascInput){
 	var data = { nome: name, email: emailInput, endereco: addressInput, bairro: bairInput, cidade:cidInput, estado: ufInput, telefone: phoneInput, finalidade: selectbasic, comodo: comInput, metragem: metragemInput, dia: nascInput }
-	return firebase.database().ref().child('usuarios').push(data)
+	return firebase.database().ref().child('orcamento').push(data)
 } 
 
-//Acompanhe seu pedido
-var app = new Framework7();
 
-var $$ = Dom7;
 
-// Set progress on inline progressbar
-$$('.set-inline-progress').on('click', function (e) {
-  var progress = $$(this).attr('data-progress');
-  app.progressbar.set('#demo-inline-progressbar', progress);
-});
-
+// ------------------------------------------------------------
 
 
