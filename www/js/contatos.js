@@ -1,6 +1,9 @@
-$$(document).on('page:init','.page[data-name="form-user"]', function(e){
+$$(document).on('page:init','.page[data-name="contatos"]', function(e){
     var page = e.detail;
     console.log(page.name);
+
+      var uploader = $$('#uploader');
+      
     $$('#btnSalvar').on('click',function () {
 
             //var formData = app.form.convertToData('#form-user-content')
@@ -10,12 +13,12 @@ $$(document).on('page:init','.page[data-name="form-user"]', function(e){
             var assuntoInput = $$('#assuntoInput').val();
             var inputBio = $$('#inputBio').val();
             
-            var formData = { nome: nameInput, email: emailInput, telefone: phoneInput, assunto: assuntoInput, bio: inputBio }
+            var formData = { name: nameInput, email: emailInput, phone: phoneInput, assunto: assuntoInput, bio: inputBio }
             console.log(formData);
             alert(JSON.stringify(formData))
             firebase.database().ref().child('contato').push(formData)
             .then( function () {
-                    app.dialog.alert('Usuário inserido');
+                    app.dialog.alert('Mensagem enviada!');
                     $$('input#nameInput').val('');
                     $$('input#emailInput').val('');
                     $$('input#phoneInput').val('');

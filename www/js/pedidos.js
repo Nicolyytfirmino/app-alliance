@@ -1,7 +1,7 @@
 var $$ = Dom7;
 
 $$(document).on('page:init', '.page[data-name="listar_produtos"]', function (e) {
-    firebase.database().ref('estoque').on('value', function (snapshot){
+    firebase.database().ref('pedidos').on('value', function (snapshot){
         $$("#userList").empty();
 
         snapshot.forEach(function(item){

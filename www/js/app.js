@@ -144,7 +144,7 @@ $$('#my-login-screen .SignOut').on('click', function () {
 
 
 
-// CADASTRAR
+// ORÇAMENTO
 
 var nameInput = document.getElementById('nameInput');
 var emailInput = document.getElementById('emailInput');

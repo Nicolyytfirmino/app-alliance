@@ -11,7 +11,7 @@
       * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
           * Enable inline JS: add 'unsafe-inline' to default-src
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -59,11 +59,11 @@
                 <li>
                   <a href="/galeria/" data-view=".view-main" class="panel-close">Galeria</a>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="/pedidos/" data-view=".view-main" class="panel-close">Meus pedidos</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="/contato/" data-view=".view-main" class="panel-close">Contato</a>
+                    <a href="/contatos/" data-view=".view-main" class="panel-close">Contato</a>
                   </li>
               </ul>
             </div>
@@ -307,7 +307,7 @@
         
         </div>
 
-        <button class="col button button-small button-round button-outline color-black" id="addButton"> Cadastrar </button> <br>
+        <button class="col button button-small button-round button-outline color-black" id="addButton"> Enviar </button> <br>
           </div>
             
         </form>                     
@@ -383,8 +383,8 @@
   <script src="js/firebase.js"></script>
   <script src="js/firebaseapp.js"></script>
   <script src="js/app.js"></script>
-  <script src="js/form-user.js"></script>
-  <script src="js/pedidos.js"></script>
+  <!-- <script src="js/form-user.js"></script> -->
+  <script src="js/contatos.js"></script>
 
 </body>
 </html>
