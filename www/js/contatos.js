@@ -1,10 +1,9 @@
-$$(document).on('page:init','.page[data-name="contatos"]', function(e){
+var $$ = Dom7;
+$$(document).on('page:init','.page[data-name="form-contatos"]', function(e){
     var page = e.detail;
     console.log(page.name);
 
-      var uploader = $$('#uploader');
-      
-    $$('#btnSalvar').on('click',function () {
+    $$('#btnSalvarContatos').on('click',function () {
 
             //var formData = app.form.convertToData('#form-user-content')
             var nameInput = $$('#nameInput').val();
