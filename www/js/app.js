@@ -1,6 +1,10 @@
 // Dom7
 var $$ = Dom7;
 
+$$('.orcamento').hide();
+$$('.contato').hide();
+$$('login-screen-open').show();
+
 
 // Framework7 App main instance
 var app  = new Framework7({
@@ -84,8 +88,9 @@ $$('#my-login-screen .SignIn').on('click', function () {
     .then( function () {
       app.dialog.alert('Bem vindo: ' + username);
       this.$$('.toolbar-inner').text('Bem vindo: ' + username + ' você está logado!');
-      // $$('.logoff').show();
-      // $$('.login-screen-open').hide();
+      $$('.orcamento').show();
+      $$('.contato').show();
+      $$('.login-screen-open').show();
       $$('input#username').val('');
       $$('input#password').val('');
     })
@@ -95,7 +100,7 @@ $$('#my-login-screen .SignIn').on('click', function () {
       if (error.code == 'auth/invalid-email'){
         app.dialog.alert('Email inválido!');
       }
-        app.dialog.alert('Falha ao cadastrar, verifique o erro no console');
+        app.dialog.alert('Falha ao cadastrar');
     })
   
 
@@ -114,7 +119,7 @@ $$('#my-login-screen .SignOut').on('click', function () {
       this.$$('.toolbar-inner').text('Usuário não autenticado');
       app.dialog.alert('Usuário não autenticado');
       app.loginScreen.close('#my-login-screen');
-      $$('.logoff').hide();
+      $$('.orcamento').hide();
       $$('.login-screen-open').show();
     }, function(error){
       console.error(error)
@@ -125,16 +130,16 @@ $$('#my-login-screen .SignOut').on('click', function () {
       $$('input#username').val('');
       $$('input#password').val('');
     })
-    $$('logoff').on('click', function() {
+    $$('orcamento').on('click', function() {
         firebase
         .auth()
         .signOut
         .then( function () {
-          this.$$('toolbar-inner').text('Usuário não autenticado');
-          app.dialog.alert('Usuário não autenticado');
+          this.$$('toolbar-inner').text('Volte sempre');
+          app.dialog.alert('Volte sempre');
           $$('input#username').val('');
           $$('input#password').val('');
-          $$('.logoff').hide();
+          $$('.orcamento').hide();
           $$('.login-screen-open').show();
         }, function(error){
           console.error(error)
