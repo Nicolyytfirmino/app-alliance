@@ -42,11 +42,11 @@
 
 .galeriaaa{position: absolute; left: 19%;}
 
-.sobre h2{color: #a58c76; text-align: center;}
+.sobre h2{color: #000; text-align: center;}
 
 .sobre p{color: black; text-align: center;}
 
-.glr h2{color: #a58c76; text-align: center;}
+.glr h2{text-align: center; color: #000;}
 
 .glra{position: absolute; left: 3%;}
 
@@ -88,7 +88,7 @@ h2, p{text-align: center;}
 
 .h4{ text-align: center; color: #a58c76;}
 
-.titulo{
+/* .titulo{
     color: #a58c76;
     text-align: center;
-}
+} */

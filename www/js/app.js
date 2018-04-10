@@ -10,7 +10,7 @@ $$('login-screen-open').show();
 var app  = new Framework7({
   root: '#app', // App root element
   id: 'io.framework7.testapp', // App bundle ID
-  name: 'Framework7', // App name
+  name: 'Alliance', // App name
   theme: 'auto', // Automatic theme detection
   // App root data
   data: function () {
