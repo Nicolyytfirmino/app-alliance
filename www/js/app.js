@@ -193,4 +193,4 @@ function inserir(name, emailInput, addressInput, bairInput, cidInput, ufInput, p
 
 // ------------------------------------------------------------
 
-
+var link = $$('a').attr('href');
