@@ -46,7 +46,7 @@
 
 .glra{position: absolute; left: 8%;}
 
-.footer{background: #a58c76; padding: 10px 0; }
+.footer{background: #7e6148; padding: 10px 0; }
 
 .footer h2{color: #000;}
 
@@ -83,6 +83,9 @@ h1{text-align: center;}
 h2, p{text-align: center;}
 
 .h4{ text-align: center; color: #a58c76;}
+
+.sala{position: relative; left: 20%;}
+
 
 /* .titulo{
     color: #a58c76;
