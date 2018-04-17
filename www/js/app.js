@@ -116,10 +116,11 @@ $$('#my-login-screen .SignOut').on('click', function () {
     .auth()
     .signOut()
     .then( function () {
-      this.$$('.toolbar-inner').text('Usuário não autenticado');
-      app.dialog.alert('Usuário não autenticado');
+      this.$$('.toolbar-inner').text('Você saiu! Volte sempre');
+      app.dialog.alert('Você saiu! Volte sempre');
       app.loginScreen.close('#my-login-screen');
       $$('.orcamento').hide();
+      $$('.contato').hide();
       $$('.login-screen-open').show();
     }, function(error){
       console.error(error)
@@ -135,8 +136,8 @@ $$('#my-login-screen .SignOut').on('click', function () {
         .auth()
         .signOut
         .then( function () {
-          this.$$('toolbar-inner').text('Volte sempre');
-          app.dialog.alert('Volte sempre');
+          this.$$('toolbar-inner').text('Você saiu! Volte sempre');
+          app.dialog.alert('Você saiu! Volte sempre');
           $$('input#username').val('');
           $$('input#password').val('');
           $$('.orcamento').hide();
@@ -193,4 +194,3 @@ function inserir(name, emailInput, addressInput, bairInput, cidInput, ufInput, p
 
 // ------------------------------------------------------------
 
-var link = $$('a').attr('href');
