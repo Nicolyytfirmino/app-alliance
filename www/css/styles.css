@@ -22,7 +22,7 @@
     position: absolute;
     left: 30%;
 }
-.adega{position: absolute; left: 40%;}
+.adega{position: absolute; left: 35%;}
 
 .escritorio{
     position: absolute; left: 30%;
@@ -36,7 +36,7 @@
 .cozinha img{height: 50%;}
 
 
-.galeria{position: absolute; left: 30%;}
+.galeria{position: absolute; left: 37%;}
 
 .galeriaa{position: absolute; left: 22%;}
 
@@ -84,7 +84,9 @@ h2, p{text-align: center;}
 
 .h4{ text-align: center; color: #a58c76;}
 
-.sala{position: relative; left: 20%;}
+.sala{position: absolute; left: 15%;}
+
+
 
 
 /* .titulo{
